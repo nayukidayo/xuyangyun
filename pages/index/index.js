@@ -1,47 +1,42 @@
 // pages/index/index.js
+const app = getApp()
+
 Page({
-  /**
-   * 页面的初始数据
-   */
-  data: {},
+  data: {
+    key: '0',
+  },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {},
+  onLoad(opts) {
+    if (opts?.type === 'login') return
+    try {
+      const auth = wx.getStorageSync('auth')
+      if (auth.username !== app.globalData.username || auth.password !== app.globalData.password) {
+        throw new Error('Authentication failed')
+      }
+    } catch (_) {
+      wx.redirectTo({ url: '/pages/login/index' })
+    }
+  },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {},
+  onActive(e) {
+    wx.showToast({ title: '加载中', icon: 'loading', mask: true, duration: 200 })
+    this.setData({ key: e.currentTarget.dataset.key })
+    setTimeout(() => this.setData({ key: '0' }), 100)
+  },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {},
+  onWenDu() {
+    wx.showModal({
+      title: '温度设定',
+      editable: true,
+      placeholderText: '16 - 30 ℃',
+    })
+  },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {},
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {},
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {},
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {},
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {},
+  onPinLv() {
+    wx.showModal({
+      title: '频率设定',
+      editable: true,
+      placeholderText: '0 - 50 Hz',
+    })
+  },
 })

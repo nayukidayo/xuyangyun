@@ -1,0 +1,57 @@
+/* pages/login/index.wxss */
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #2b4baf, #213b91, #162d73, #0c1e57, #03113d);
+}
+
+.img {
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper {
+  margin-top: 80px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  color: #f3faff;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sub1 {
+  padding: 10px 20px;
+  border: 1px solid #9fcafb;
+  box-shadow: 0 0 4px 0px #ffffff57;
+  border-radius: 4px;
+  color: #f3faff;
+}
+
+.sub2 {
+  color: #0c1e57;
+}
+
+.sub3 {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 100% !important;
+  margin: 0px;
+  color: #f3faff;
+  background-color: #2b4baf;
+}
+.btn-hover {
+  filter: brightness(0.8);
+}

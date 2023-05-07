@@ -1,5 +1,6 @@
 {
-  "pages": ["pages/index/index"],
+  "entryPagePath": "pages/index/index",
+  "pages": ["pages/index/index", "pages/login/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -7,5 +8,6 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
   "sitemapLocation": "sitemap.json"
 }

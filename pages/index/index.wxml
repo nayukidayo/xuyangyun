@@ -6,7 +6,7 @@
       <text class="group-title">温控器</text>
       <view class="alert">
         <view class="alert-wrapper">
-          <image class="alert-img1" src="/assets/ord.png" mode="heightFix" />
+          <image class="alert-img1" src="/assets/ord2.png" mode="heightFix" />
           <image class="alert-img2" src="/assets/ord19.png" mode="heightFix" />
           <text class="alert-title">燃气报警</text>
         </view>
@@ -19,21 +19,21 @@
       <view class="kongtiao">
         <text class="ktwd">室内温度</text>
         <view class="ktw1">
-          <text class="ktw1-1">-</text>
-          <image class="ktw1-2" src="/assets/ord23.png" mode="aspectFit" />
+          <text class="ktw1-1 {{key === '1' ? 'active' : ''}}" data-key="1" bindtap="onActive">-</text>
+          <image class="ktw1-2" src="/assets/ord23.png" mode="aspectFit" bindtap="onWenDu" />
           <text class="ktw1-3">0.0 ℃</text>
-          <text class="ktw1-1">+</text>
+          <text class="ktw1-1 {{key === '2' ? 'active' : ''}}" data-key="2" bindtap="onActive">+</text>
         </view>
         <view class="ktw2">
-          <image class="ktw2-1" src="/assets/ord4.png" mode="aspectFit" />
-          <image class="ktw2-1" src="/assets/ord3.png" mode="aspectFit" />
+          <image class="ktw2-1 {{key === '3' ? 'active' : ''}}" data-key="3" bindtap="onActive" src="/assets/ord4.png" mode="aspectFit" bindtap="onActive" />
+          <image class="ktw2-1 {{key === '4' ? 'active' : ''}}" data-key="4" bindtap="onActive" src="/assets/ord3.png" mode="aspectFit" />
         </view>
         <view class="ktw3">
-          <image class="ktw3-1" src="/assets/ord5.png" mode="aspectFit" />
-          <image class="ktw3-1" src="/assets/ord6.png" mode="aspectFit" />
-          <image class="ktw3-1" src="/assets/ord7.png" mode="aspectFit" />
-          <image class="ktw3-1" src="/assets/ord8.png" mode="aspectFit" />
-          <image class="ktw3-1 ktw3-2" src="/assets/ord9.png" mode="aspectFit" />
+          <image class="ktw3-1 {{key === '5' ? 'active' : ''}}" data-key="5" bindtap="onActive" src="/assets/ord5.png" mode="aspectFit" />
+          <image class="ktw3-1 {{key === '6' ? 'active' : ''}}" data-key="6" bindtap="onActive" src="/assets/ord6.png" mode="aspectFit" />
+          <image class="ktw3-1 {{key === '7' ? 'active' : ''}}" data-key="7" bindtap="onActive" src="/assets/ord7.png" mode="aspectFit" />
+          <image class="ktw3-1 {{key === '8' ? 'active' : ''}}" data-key="8" bindtap="onActive" src="/assets/ord8.png" mode="aspectFit" />
+          <image class="ktw3-1 ktw3-2 {{key === '9' ? 'active' : ''}}" data-key="9" bindtap="onActive" src="/assets/ord9.png" mode="aspectFit" />
         </view>
       </view>
     </view>
@@ -50,19 +50,19 @@
           <view>Y1状态 : false</view>
         </view>
         <view class="mb-action">
-          <view class="mba">开启</view>
-          <view class="mba mba-1">关闭</view>
-          <view class="mba">开启</view>
-          <view class="mba mba-1">关闭</view>
+          <view class="mba {{key === '10' ? 'active' : ''}}" data-key="10" bindtap="onActive">开启</view>
+          <view class="mba mba-1 {{key === '11' ? 'active' : ''}}" data-key="11" bindtap="onActive">关闭</view>
+          <view class="mba {{key === '12' ? 'active' : ''}}" data-key="12" bindtap="onActive">开启</view>
+          <view class="mba mba-1 {{key === '13' ? 'active' : ''}}" data-key="13" bindtap="onActive">关闭</view>
         </view>
       </view>
       <view class="dj">
         <text class="djkz">电机控制</text>
         <image class="dj-img" src="/assets/ord10.png" mode="aspectFit" />
         <view class="dj-action">
-          <view class="dja dja1">正转</view>
-          <view class="dja dja2">反转</view>
-          <view class="dja dja3">停止</view>
+          <view class="dja dja1 {{key === '14' ? 'active' : ''}}" data-key="14" bindtap="onActive">正转</view>
+          <view class="dja dja2 {{key === '15' ? 'active' : ''}}" data-key="15" bindtap="onActive">反转</view>
+          <view class="dja dja3 {{key === '16' ? 'active' : ''}}" data-key="16" bindtap="onActive">停止</view>
         </view>
         <view class="dj-sd">
           <view class="djsd">
@@ -73,7 +73,7 @@
           <view class="djsd">
             <view class="djsd-1 djsd-2">0.0 Hz</view>
             <view class="djsd-1 djsd-2">0.0</view>
-            <view class="djsd-1 djsd-3">频率设定</view>
+            <view class="djsd-1 djsd-3" bindtap="onPinLv">频率设定</view>
           </view>
         </view>
       </view>
@@ -81,7 +81,7 @@
   </view>
 
   <view class="group">
-    <image class="group-img cgq-img" src="/assets/ord28.png" mode="scaleToFill" />
+    <image class="group-img cgq-img" src="/assets/ord24.png" mode="scaleToFill" />
     <view class="group-ctx">
       <text class="group-title cgq-title">传感器</text>
       <view class="cgq">

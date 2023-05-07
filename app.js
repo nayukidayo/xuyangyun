@@ -1,4 +1,7 @@
 // app.js
 App({
-  globalData: {},
+  globalData: {
+    username: 'JG',
+    password: 'Admin12345'
+  },
 })

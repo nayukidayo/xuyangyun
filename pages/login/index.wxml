@@ -1,0 +1,17 @@
+<!--pages/login/index.wxml-->
+<view class="container">
+  <image class="img" src="/assets/ord18.png" mode="aspectFit" />
+  <form bindsubmit="onSubmit">
+    <view class="wrapper">
+      <view class="title">LOGIN</view>
+      <input class="sub1" name="username" maxlength="20" placeholder="用户名" placeholder-class="sub2" />
+      <input class="sub1" name="password" maxlength="20" placeholder="密码" placeholder-class="sub2" password="true" />
+      <checkbox-group name="remember">
+        <label class="sub3">
+          <checkbox checked="true" color="#2b4baf" />记住我
+        </label>
+      </checkbox-group>
+      <button class="btn" hover-class="btn-hover" formType="submit">登录</button>
+    </view>
+  </form>
+</view>
