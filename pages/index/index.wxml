@@ -1,0 +1,154 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="group">
+    <image class="group-img" src="/assets/ord20.png" mode="widthFix" />
+    <view class="group-ctx">
+      <text class="group-title">温控器</text>
+      <view class="alert">
+        <view class="alert-wrapper">
+          <image class="alert-img1" src="/assets/ord.png" mode="heightFix" />
+          <image class="alert-img2" src="/assets/ord19.png" mode="heightFix" />
+          <text class="alert-title">燃气报警</text>
+        </view>
+        <view class="alert-wrapper">
+          <image class="alert-img1" src="/assets/ord1.png" mode="heightFix" />
+          <image class="alert-img2" src="/assets/ord19.png" mode="heightFix" />
+          <text class="alert-title">红外报警</text>
+        </view>
+      </view>
+      <view class="kongtiao">
+        <text class="ktwd">室内温度</text>
+        <view class="ktw1">
+          <text class="ktw1-1">-</text>
+          <image class="ktw1-2" src="/assets/ord23.png" mode="aspectFit" />
+          <text class="ktw1-3">0.0 ℃</text>
+          <text class="ktw1-1">+</text>
+        </view>
+        <view class="ktw2">
+          <image class="ktw2-1" src="/assets/ord4.png" mode="aspectFit" />
+          <image class="ktw2-1" src="/assets/ord3.png" mode="aspectFit" />
+        </view>
+        <view class="ktw3">
+          <image class="ktw3-1" src="/assets/ord5.png" mode="aspectFit" />
+          <image class="ktw3-1" src="/assets/ord6.png" mode="aspectFit" />
+          <image class="ktw3-1" src="/assets/ord7.png" mode="aspectFit" />
+          <image class="ktw3-1" src="/assets/ord8.png" mode="aspectFit" />
+          <image class="ktw3-1 ktw3-2" src="/assets/ord9.png" mode="aspectFit" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="group">
+    <image class="group-img" src="/assets/ord20.png" mode="widthFix" />
+    <view class="group-ctx">
+      <text class="group-title">变频控制</text>
+      <view class="mb">
+        <text class="mbkz">面板控制</text>
+        <view class="mb-status">
+          <view>Y1状态 : false</view>
+          <view>Y1状态 : false</view>
+        </view>
+        <view class="mb-action">
+          <view class="mba">开启</view>
+          <view class="mba mba-1">关闭</view>
+          <view class="mba">开启</view>
+          <view class="mba mba-1">关闭</view>
+        </view>
+      </view>
+      <view class="dj">
+        <text class="djkz">电机控制</text>
+        <image class="dj-img" src="/assets/ord10.png" mode="aspectFit" />
+        <view class="dj-action">
+          <view class="dja dja1">正转</view>
+          <view class="dja dja2">反转</view>
+          <view class="dja dja3">停止</view>
+        </view>
+        <view class="dj-sd">
+          <view class="djsd">
+            <view class="djsd-1">运行频率</view>
+            <view class="djsd-1">频率设定</view>
+            <view class="djsd-1"></view>
+          </view>
+          <view class="djsd">
+            <view class="djsd-1 djsd-2">0.0 Hz</view>
+            <view class="djsd-1 djsd-2">0.0</view>
+            <view class="djsd-1 djsd-3">频率设定</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="group">
+    <image class="group-img cgq-img" src="/assets/ord28.png" mode="scaleToFill" />
+    <view class="group-ctx">
+      <text class="group-title cgq-title">传感器</text>
+      <view class="cgq">
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord11.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">温度</text>
+            <text class="cgqw-3">0.0 ℃</text>
+          </view>
+        </view>
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord12.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">TVOC</text>
+            <text class="cgqw-3">0.0 ug/m³</text>
+          </view>
+        </view>
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord13.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">电压</text>
+            <text class="cgqw-3">0.0 V</text>
+          </view>
+        </view>
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord14.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">电流</text>
+            <text class="cgqw-3">0.0 A</text>
+          </view>
+        </view>
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord15.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">频率</text>
+            <text class="cgqw-3">0.0 Hz</text>
+          </view>
+        </view>
+        <view class="cgqw">
+          <view class="cgqw1">
+            <image class="cgqw-1 cgqw-16" src="/assets/ord16.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">功率</text>
+            <text class="cgqw-3">0.0 W</text>
+          </view>
+        </view>
+        <view class="cgqw cgqw-17">
+          <view class="cgqw1">
+            <image class="cgqw-1" src="/assets/ord17.png" mode="aspectFit" />
+          </view>
+          <view class="cgqw2">
+            <text class="cgqw-2">电能</text>
+            <text class="cgqw-3">0.0 kW-hr</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
